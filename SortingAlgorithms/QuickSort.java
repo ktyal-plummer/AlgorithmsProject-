@@ -1,30 +1,84 @@
 package SortingAlgorithms;
+import java.io.*;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.ArrayList;  
 
 public class QuickSort {
-    private final String fileName;
+    private String filePath;
+    private ArrayList<Integer> sortedArray;
 
     public QuickSort(String file)
     {
-        this.fileName = file;
+        this.filePath = file;
+    }
+
+    /**
+     * Calls the quick sort functionality 
+     */
+    public void sort()
+    {
+        ArrayList<Integer> unsortedArray = new ArrayList<Integer>();
+
+        try 
+        {
+            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            String currentLine = "";
+            
+            while((currentLine = reader.readLine()) != null){
+                String splitNumbers[] = currentLine.split(" ");
+                for (int i = 0; i < splitNumbers.length; i++)
+                {
+                    int numberFromFile = -1;
+                    try
+                    {
+                        numberFromFile = Integer.parseInt(splitNumbers[i]);
+                    }
+                    catch(NumberFormatException e)
+                    {
+                        System.out.println(e);
+                    }
+
+                    if(numberFromFile > -1)
+                    {
+                        unsortedArray.add(numberFromFile);
+                    }
+                }
+            }
+            
+            reader.close();
+        } 
+        catch (Exception e) 
+        {
+            e.printStackTrace();
+        }
+
+        long start = System.currentTimeMillis();
+        quickSort(unsortedArray, 0, unsortedArray.size()-1);
+        long end = System.currentTimeMillis();
+        NumberFormat formatter = new DecimalFormat("#0.0000");
+        System.out.print("Total execution time: " + formatter.format((end - start) / 1000d) + " seconds");
+
+        sortedArray = unsortedArray;
     }
     
     /**
      * Sorts a subarray by quicksort
      * 
-     * @param unsortedArray
+     * @param array
      *          the original unsorted array of numbers 
      * @param left 
      *          the starting left indice 
      * @param right 
      *          the starting right indice
      */
-    public void quickSort(int unsortedArray[], int left, int right)
+    public void quickSort(ArrayList<Integer> array, int left, int right)
     {
-        if(left < right)                                                                  // if l<r
+        if(left < right)                                                          // if l<r
         {
-            int splitPosition = lomutoPartition(unsortedArray, left, right);              // s <- Partition(A[l..r])
-            quickSort(unsortedArray, left, splitPosition-1);                              // Quicksort(A[l..s − 1])
-            quickSort(unsortedArray, splitPosition+1, right);                             // Quicksort(A[s + 1..r])
+            int splitPosition = lomutoPartition(array, left, right);              // s <- Partition(A[l..r])
+            quickSort(array, left, splitPosition-1);                              // Quicksort(A[l..s − 1])
+            quickSort(array, splitPosition+1, right);                             // Quicksort(A[s + 1..r])
         }
     }
 
@@ -39,28 +93,37 @@ public class QuickSort {
      *          the right indice
      * @return the new position of the piviot 
      */
-    private int lomutoPartition(int array[], int left, int right) 
+    private int lomutoPartition(ArrayList<Integer> array, int left, int right) 
     {
-        int pivot = array[left];                                // p <- A[l]
-        int indexOfLastElement = left;                          // s <- l
+        int pivot = array.get(left);                                // p <- A[l]
+        int indexOfLastElement = left;                              // s <- l
 
-        for(int i = left; i <= right; i++){                     // for i <- l + 1 to r do     
-            if(array[i] < pivot)                                // if A[i] < p
+        for(int i = left; i <= right; i++){                         // for i <- l + 1 to r do     
+            if(array.get(i) < pivot)                                // if A[i] < p
             {
-                indexOfLastElement += 1;                        // s <- s + 1;
+                indexOfLastElement += 1;                            // s <- s + 1;
                 
-                int tempS = array[indexOfLastElement];          // swap(A[s], A[i])
-                int tempI = array[i];
-                array[indexOfLastElement] = tempI;
-                array[i] = tempS;
+                int tempS = array.get(indexOfLastElement);          // swap(A[s], A[i])
+                int tempI = array.get(i);
+                array.set(indexOfLastElement, tempI);
+                array.set(i, tempS);
             }
         }
 
-        int tempL = array[left];                                // swap(A[l], A[s])
-        int tempS = array[indexOfLastElement];
-        array[left] = tempS;
-        array[indexOfLastElement] = tempL;
+        int tempL = array.get(left);                                // swap(A[l], A[s])
+        int tempS = array.get(indexOfLastElement);
+        array.set(left, tempS);
+        array.set(indexOfLastElement, tempL);
 
-        return indexOfLastElement;                              // return s
+        return indexOfLastElement;                                  // return s
+    }
+
+    /**
+     * 
+     * @return the sorted array from quick sorting 
+     */
+    public ArrayList<Integer> getSortedArray()
+    {
+        return sortedArray;
     }
 }
