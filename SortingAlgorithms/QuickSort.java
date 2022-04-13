@@ -57,7 +57,7 @@ public class QuickSort {
         quickSort(unsortedArray, 0, unsortedArray.size()-1);
         long end = System.currentTimeMillis();
         NumberFormat formatter = new DecimalFormat("#0.0000");
-        System.out.print("Total execution time: " + formatter.format((end - start) / 1000d) + " seconds");
+        System.out.println("Total execution time: " + formatter.format((end - start) / 1000d) + " seconds");
 
         sortedArray = unsortedArray;
     }
