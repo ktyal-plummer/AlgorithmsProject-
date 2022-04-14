@@ -7,18 +7,18 @@ public class Main
     public static void main(String[] args)
     {
         // Unsorted File generation 
-        // GenerateFiles gf = new GenerateFiles(30, 10000, "./UnsortedFiles/SmallList");
+        // GenerateFiles gf = new GenerateFiles(30, 1000000, "./UnsortedFiles/LargeList");
         // gf.generate();
 
         // Generating sorted files from unsorted files
-        // for(int i=1; i < 31; i++){
-        //     QuickSort qSort = new QuickSort("./UnsortedFiles/SmallList/File" + i + ".txt");
-        //     qSort.sort();
-        //     ArrayList<Integer> sorted = qSort.getSortedArray();
+        for(int i=1; i < 31; i++){
+            HeapSort hSort = new HeapSort("./UnsortedFiles/LargeList/File" + i + ".txt");
+            hSort.sort();
+            ArrayList<Integer> sorted = hSort.getSortedArray();
             
-        //     GenerateFiles gf = new GenerateFiles(sorted, "./SortedFiles/SmallList/File" + i + ".txt");
-        //     gf.generateFromList();
-        // }
+            GenerateFiles gf = new GenerateFiles(sorted, "./SortedFiles/LargeList/File" + i + ".txt");
+            gf.generateFromList();
+        }
 
         // Calling quick sort
         // QuickSort qSort = new QuickSort("./UnsortedFiles/SmallList/File1.txt");
