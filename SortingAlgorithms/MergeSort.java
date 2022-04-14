@@ -16,7 +16,7 @@ public class MergeSort {
     }
 
      /**
-     * Calls the quick sort functionality 
+     * Calls the merge sort functionality 
      */
     public void sort()
     {
@@ -76,74 +76,72 @@ public class MergeSort {
 
         if(n > 1) 
         {
-            ArrayList<Integer> B = new ArrayList<Integer>();
+            ArrayList<Integer> leftArr = new ArrayList<Integer>();
             for(int i = 0; i <= (int)Math.floor(n/2)-1; i++)
             {
-                B.add(array.get(i));
+                leftArr.add(array.get(i));
             }
 
-            ArrayList<Integer> C = new ArrayList<Integer>();
+            ArrayList<Integer> rightArr = new ArrayList<Integer>();
             for(int i = (int)Math.floor(n/2); i < n; i++)
             {
-                C.add(array.get(i));
+                rightArr.add(array.get(i));
             }
             
-            mergeSort(B);
-            mergeSort(C);
-            merge(B, C, array);
+            mergeSort(leftArr);
+            mergeSort(rightArr);
+            merge(leftArr, rightArr, array);
         }
-
-        sortedArray = array;
     }
 
     /**
      * Merges two sorted arrays into one sorted array
      * 
-     * @param B
+     * @param leftArr
      *          The left side of the split array
-     * @param C
+     * @param rightArr
      *          The right side of the split array
-     * @param A
+     * @param mergeToArr
      *          The array to be overwritten with sorted values
      */
-    public void merge(ArrayList<Integer> B, ArrayList<Integer> C, ArrayList<Integer> A)
+    public void merge(ArrayList<Integer> leftArr, ArrayList<Integer> rightArr, ArrayList<Integer> mergeToArr)
     {
         int i = 0, j = 0, k = 0;
-        int p = B.size();
-        int q = C.size();
+        int p = leftArr.size();
+        int q = rightArr.size();
 
         while(i < p && j < q) 
         {
-            if(B.get(i) <= C.get(j)) 
+            if(leftArr.get(i) <= rightArr.get(j)) 
             {
-                A.set(k, B.get(i));
+                mergeToArr.set(k, leftArr.get(i));
                 i = i + 1;
             }
             else 
             {
-                A.set(k, C.get(j));
+                mergeToArr.set(k, rightArr.get(j));
                 j = j + 1;
             }
 
             k = k + 1;
         }
 
-        // This last part comes from a solution at: https://www.geeksforgeeks.org/merge-sort/
+        // This last bit comes from a solution at: https://www.geeksforgeeks.org/merge-sort/
         while(i<p)
         {
-            A.set(k, B.get(i));
+            mergeToArr.set(k, leftArr.get(i));
             i = i + 1;
             k = k + 1;
         }
 
         while(j<q)
         {
-            A.set(k, C.get(j));
+            mergeToArr.set(k, rightArr.get(j));
             j = j + 1;
             k = k + 1;
         }
 
-        // Solution from the books sudo code gave me the array [1, 2, 3, 4, 5, 7, 9, 9] from the input [8, 3, 2, 9, 7, 1, 5, 4] and I couldn't figure out why
+        // My attempted solution from the books pseudo code gave me the array [1, 2, 3, 4, 5, 7, 9, 9] from the input [8, 3, 2, 9, 7, 1, 5, 4] and I couldn't figure out why
         // System.out.println("Last part: ");
         // if(i == p)
         // {

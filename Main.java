@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import SortingAlgorithms.*;
 
 public class Main 
@@ -26,13 +28,20 @@ public class Main
         // MergeSort mSort = new MergeSort("./UnsortedFiles/SmallList/File1.txt");
         // mSort.sort();
 
-        // ArrayList<Integer> Sorted = ms.getSortedArray();
-        // System.out.println("Sorted: ");
+        // Calling heap sort
+        // HeapSort hSort = new HeapSort("./UnsortedFiles/SmallList/File1.txt");
+        // hSort.sort();
+        
+        //Outputs the sorted array to the console 
+        // ArrayList<Integer> Sorted = hSort.getSortedArray();
+        // System.out.println("Sorted array: ");
         // for (int i : Sorted) {
         //     System.out.println(i);
         // }
         // System.out.println("Finished");
     }
 }
+
+
 
 
