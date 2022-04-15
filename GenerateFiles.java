@@ -49,6 +49,33 @@ public class GenerateFiles
         }
     }
 
+    
+    public void generateReverseFromList() {
+        try 
+        {
+            FileWriter file = new FileWriter(fileLocation);
+            BufferedWriter output = new BufferedWriter(file);
+
+            for(int i = sortedList.size()-1; i >= 0; i--)
+            {
+                if(i == sortedList.size()-1)
+                {
+                    output.write("" + sortedList.get(i));
+                }
+                else 
+                {
+                    output.write(" " + sortedList.get(i));
+                }
+            }
+
+            output.close();
+        }
+        catch(Exception e) 
+        {
+            e.getStackTrace();
+        }
+    }
+
     public void generate()
     {
         Random rand = new Random();
