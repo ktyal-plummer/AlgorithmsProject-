@@ -6,19 +6,16 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.io.*;
 
-public class MergeSort {
-    private String filePath;
+public class MergeSort implements Sort {
     private ArrayList<Integer> sortedArray = new ArrayList<Integer>();
+    private double totalSortingTime;
 
-    public MergeSort(String file)
-    {
-        this.filePath = file;
-    }
+    public MergeSort(){}
 
      /**
      * Calls the merge sort functionality 
      */
-    public void sort()
+    public void sort(String filePath)
     {
         ArrayList<Integer> unsortedArray = new ArrayList<Integer>();
 
@@ -59,7 +56,16 @@ public class MergeSort {
         mergeSort(unsortedArray);
         long end = System.currentTimeMillis();
         NumberFormat formatter = new DecimalFormat("#0.0000");
-        System.out.println("Total execution time: " + formatter.format((end - start) / 1000d) + " seconds");
+        String finalTime = formatter.format((end - start) / 1000d);
+        System.out.println(finalTime + " seconds");
+
+        try{
+            double convertedTime = Double.parseDouble(finalTime);
+            totalSortingTime = convertedTime;
+        }
+        catch (NumberFormatException ex){
+            ex.printStackTrace();
+        }
 
         sortedArray = unsortedArray;
     }
@@ -141,32 +147,34 @@ public class MergeSort {
             k = k + 1;
         }
 
-        // My attempted solution from the books pseudo code gave me the array [1, 2, 3, 4, 5, 7, 9, 9] from the input [8, 3, 2, 9, 7, 1, 5, 4] and I couldn't figure out why
-        // System.out.println("Last part: ");
-        // if(i == p)
-        // {
-        //     System.out.println("First If: ");
-        //     for(int n = j; n <= q-1; n++)
-        //     {
-        //         for(int m = k; m <= (p+q)-1; m++)
-        //         {
-        //             A.set(m, C.get(n));
-        //             System.out.println(C.get(n));
-        //         }
-        //     }
-        // }
-        // else
-        // {
-        //     System.out.println("Second else: ");
-        //     for(int n = i; n <= p-1; n++)
-        //     {
-        //         for(int m = k; m <= (p+q)-1; m++)
-        //         {
-        //             A.set(m, B.get(n));
-        //             System.out.println("Set index: " + m + " to: " + B.get(n));
-        //         }
-        //     }
-        // }
+        /*
+        My attempted solution from the books pseudo code gave me the array [1, 2, 3, 4, 5, 7, 9, 9] from the input [8, 3, 2, 9, 7, 1, 5, 4] and I couldn't figure out why
+        System.out.println("Last part: ");
+        if(i == p)
+        {
+            System.out.println("First If: ");
+            for(int n = j; n <= q-1; n++)
+            {
+                for(int m = k; m <= (p+q)-1; m++)
+                {
+                    A.set(m, C.get(n));
+                    System.out.println(C.get(n));
+                }
+            }
+        }
+        else
+        {
+            System.out.println("Second else: ");
+            for(int n = i; n <= p-1; n++)
+            {
+                for(int m = k; m <= (p+q)-1; m++)
+                {
+                    A.set(m, B.get(n));
+                    System.out.println("Set index: " + m + " to: " + B.get(n));
+                }
+            }
+        }
+        */
     }
 
     
@@ -177,5 +185,23 @@ public class MergeSort {
     public ArrayList<Integer> getSortedArray()
     {
         return sortedArray;
+    }
+
+    /**
+     * 
+     * @return the total amount of time it took to sort the given array
+     */
+    public double getTotalSortingTime()
+    {
+        return totalSortingTime;
+    }
+
+    /**
+     * 
+     * @return the class name
+     */
+    public String toString()
+    {
+        return "Merge Sort";
     }
 }

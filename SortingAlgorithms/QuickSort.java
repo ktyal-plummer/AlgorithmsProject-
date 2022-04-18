@@ -4,25 +4,22 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;  
 
-public class QuickSort {
-    private String filePath;
+public class QuickSort implements Sort {
     private ArrayList<Integer> sortedArray;
+    private double totalSortingTime;
 
-    public QuickSort(String file)
-    {
-        this.filePath = file;
-    }
+    public QuickSort(){}
 
     /**
      * Calls the quick sort functionality 
      */
-    public void sort()
+    public void sort(String file)
     {
         ArrayList<Integer> unsortedArray = new ArrayList<Integer>();
 
         try 
         {
-            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            BufferedReader reader = new BufferedReader(new FileReader(file));
             String currentLine = "";
             
             while((currentLine = reader.readLine()) != null){
@@ -57,7 +54,16 @@ public class QuickSort {
         quickSort(unsortedArray, 0, unsortedArray.size()-1);
         long end = System.currentTimeMillis();
         NumberFormat formatter = new DecimalFormat("#0.0000");
-        System.out.println("Total execution time: " + formatter.format((end - start) / 1000d) + " seconds");
+        String finalTime = formatter.format((end - start) / 1000d);
+        System.out.println(finalTime + " seconds");
+
+        try{
+            double convertedTime = Double.parseDouble(finalTime);
+            totalSortingTime = convertedTime;
+        }
+        catch (NumberFormatException ex){
+            ex.printStackTrace();
+        }
 
         sortedArray = unsortedArray;
     }
@@ -125,5 +131,23 @@ public class QuickSort {
     public ArrayList<Integer> getSortedArray()
     {
         return sortedArray;
+    }
+
+    /**
+     * 
+     * @return the total amount of time it took to sort the given array
+     */
+    public double getTotalSortingTime()
+    {
+        return totalSortingTime;
+    }
+
+    /**
+     * 
+     * @return the class name
+     */
+    public String toString()
+    {
+        return "Quick Sort";
     }
 }

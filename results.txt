@@ -1,0 +1,40 @@
+=====================
+Unsorted Small Files
+=====================
+Merge Sort
+=====================
+File 1: 0.0200
+File 2: 0.0070
+File 3: 0.0070
+File 4: 0.0070
+File 5: 0.0080
+File 6: 0.0060
+File 7: 0.0080
+File 8: 0.0070
+File 9: 0.0080
+File 10: 0.0050
+File 11: 0.0070
+File 12: 0.0070
+File 13: 0.0100
+File 14: 0.0100
+File 15: 0.0070
+File 16: 0.0100
+File 17: 0.0080
+File 18: 0.0080
+File 19: 0.0070
+File 20: 0.0060
+File 21: 0.0060
+File 22: 0.0080
+File 23: 0.0030
+File 24: 0.0030
+File 25: 0.0030
+File 26: 0.0040
+File 27: 0.0030
+File 28: 0.0050
+File 29: 0.0030
+File 30: 0.0030
+--------STATS--------
+Total time: 0.2040
+Average: 0.0068
+Standard Deviation: 0.0032
+

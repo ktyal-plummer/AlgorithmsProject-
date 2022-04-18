@@ -8,19 +8,16 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
 // Used pseudo code from this website: https://fullyunderstood.com/pseudocodes/heap-sort/ to build heap sort 
-public class HeapSort {
-    private String filePath;
+public class HeapSort implements Sort {
     private ArrayList<Integer> sortedArray = new ArrayList<Integer>();
+    private double totalSortingTime;
 
-    public HeapSort(String path)
-    {
-        this.filePath = path;
-    }
+    public HeapSort(){}
 
     /**
      * Calls the heap sort functionality
      */
-    public void sort()
+    public void sort(String filePath)
     {
         ArrayList<Integer> unsortedArray = new ArrayList<Integer>();
 
@@ -61,7 +58,16 @@ public class HeapSort {
         heapSort(unsortedArray);
         long end = System.currentTimeMillis();
         NumberFormat formatter = new DecimalFormat("#0.0000");
-        System.out.println("Total execution time: " + formatter.format((end - start) / 1000d) + " seconds");
+        String finalTime = formatter.format((end - start) / 1000d);
+        System.out.println(finalTime + " seconds");
+
+        try{
+            double convertedTime = Double.parseDouble(finalTime);
+            totalSortingTime = convertedTime;
+        }
+        catch (NumberFormatException ex){
+            ex.printStackTrace();
+        }
 
         sortedArray = unsortedArray;
     }
@@ -135,5 +141,23 @@ public class HeapSort {
     public ArrayList<Integer> getSortedArray()
     {
         return sortedArray;
+    }
+
+    /**
+     * 
+     * @return the total amount of time it took to sort the given array
+     */
+    public double getTotalSortingTime()
+    {
+        return totalSortingTime;
+    }
+
+    /**
+     * 
+     * @return the class name
+     */
+    public String toString()
+    {
+        return "Heap Sort";
     }
 }
