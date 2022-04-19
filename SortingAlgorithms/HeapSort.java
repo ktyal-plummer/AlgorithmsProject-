@@ -20,6 +20,8 @@ public class HeapSort implements Sort {
     public void sort(String filePath)
     {
         ArrayList<Integer> unsortedArray = new ArrayList<Integer>();
+        sortedArray = new ArrayList<Integer>();
+        totalSortingTime = 0.0;
 
         try 
         {

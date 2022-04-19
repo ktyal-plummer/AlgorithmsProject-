@@ -7,19 +7,25 @@ import java.util.ArrayList;
 public class QuickSort implements Sort {
     private ArrayList<Integer> sortedArray;
     private double totalSortingTime;
+    private int leftOfPivot;
+    private int rightOfPivot;
 
     public QuickSort(){}
 
     /**
      * Calls the quick sort functionality 
      */
-    public void sort(String file)
+    public void sort(String filePath)
     {
         ArrayList<Integer> unsortedArray = new ArrayList<Integer>();
+        sortedArray = new ArrayList<Integer>();
+        totalSortingTime = 0.0;
+        leftOfPivot = 0;
+        rightOfPivot = 0;
 
         try 
         {
-            BufferedReader reader = new BufferedReader(new FileReader(file));
+            BufferedReader reader = new BufferedReader(new FileReader(filePath));
             String currentLine = "";
             
             while((currentLine = reader.readLine()) != null){
@@ -80,48 +86,59 @@ public class QuickSort implements Sort {
      */
     public void quickSort(ArrayList<Integer> array, int left, int right)
     {
-        if(left < right)                                                          // if l<r
+        if(left < right)
         {
-            int splitPosition = lomutoPartition(array, left, right);              // s <- Partition(A[l..r])
-            quickSort(array, left, splitPosition-1);                              // Quicksort(A[l..s − 1])
-            quickSort(array, splitPosition+1, right);                             // Quicksort(A[s + 1..r])
+            DijkstraPartition(array, left, right);
+            quickSort(array, left, leftOfPivot-1);
+            quickSort(array, rightOfPivot+1, right);
         }
     }
 
+
     /**
-     * Partitions subarray by Lomuto’s algorithm using first element as pivot
+     * Using a three-way partition this method will update the index to the left and right of the pivot
      * 
-     * @param array 
-     *          the array of numbers you have to partition
+     * @param array
+     *          the unsorted array
      * @param left
      *          the left indice
      * @param right
-     *          the right indice
-     * @return the new position of the piviot 
+     *          the right indice 
      */
-    private int lomutoPartition(ArrayList<Integer> array, int left, int right) 
+    private void DijkstraPartition(ArrayList<Integer> array, int left, int right)
     {
-        int pivot = array.get(left);                                // p <- A[l]
-        int indexOfLastElement = left;                              // s <- l
-
-        for(int i = left; i <= right; i++){                         // for i <- l + 1 to r do     
-            if(array.get(i) < pivot)                                // if A[i] < p
+        int i = left;
+        int j = left;
+        int k = right;
+        int mid = array.get(left);
+        
+        while(j <= k)
+        {
+            if(array.get(j) < mid)
             {
-                indexOfLastElement += 1;                            // s <- s + 1;
-                
-                int tempS = array.get(indexOfLastElement);          // swap(A[s], A[i])
-                int tempI = array.get(i);
-                array.set(indexOfLastElement, tempI);
-                array.set(i, tempS);
+                int temp = array.get(i);
+                array.set(i, array.get(j));
+                array.set(j, temp);
+
+                i += 1;
+                j += 1;
+            }
+            else if(array.get(j) > mid)
+            {
+                int temp = array.get(j);
+                array.set(j, array.get(k));
+                array.set(k, temp);
+
+                k -= 1;
+            }
+            else 
+            {
+                j += 1;
             }
         }
 
-        int tempL = array.get(left);                                // swap(A[l], A[s])
-        int tempS = array.get(indexOfLastElement);
-        array.set(left, tempS);
-        array.set(indexOfLastElement, tempL);
-
-        return indexOfLastElement;                                  // return s
+        leftOfPivot = i;
+        rightOfPivot = k;
     }
 
     /**

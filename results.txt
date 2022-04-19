@@ -1,40 +1,1105 @@
 =====================
 Unsorted Small Files
 =====================
-Merge Sort
+Quick Sort
 =====================
 File 1: 0.0200
-File 2: 0.0070
-File 3: 0.0070
-File 4: 0.0070
-File 5: 0.0080
-File 6: 0.0060
-File 7: 0.0080
-File 8: 0.0070
-File 9: 0.0080
-File 10: 0.0050
-File 11: 0.0070
-File 12: 0.0070
-File 13: 0.0100
-File 14: 0.0100
-File 15: 0.0070
-File 16: 0.0100
-File 17: 0.0080
-File 18: 0.0080
-File 19: 0.0070
-File 20: 0.0060
+File 2: 0.0040
+File 3: 0.0050
+File 4: 0.0040
+File 5: 0.0060
+File 6: 0.0030
+File 7: 0.0030
+File 8: 0.0030
+File 9: 0.0030
+File 10: 0.0040
+File 11: 0.0060
+File 12: 0.0050
+File 13: 0.0050
+File 14: 0.0050
+File 15: 0.0030
+File 16: 0.0040
+File 17: 0.0040
+File 18: 0.0040
+File 19: 0.0040
+File 20: 0.0030
 File 21: 0.0060
-File 22: 0.0080
-File 23: 0.0030
+File 22: 0.0020
+File 23: 0.0050
+File 24: 0.0040
+File 25: 0.0070
+File 26: 0.0050
+File 27: 0.0040
+File 28: 0.0050
+File 29: 0.0040
+File 30: 0.0030
+--------STATS--------
+Total time: 0.1430
+Average: 0.0048
+Standard Deviation: 0.0030
+
+
+=====================
+Unsorted Small Files
+=====================
+Heap Sort
+=====================
+File 1: 0.0140
+File 2: 0.0040
+File 3: 0.0050
+File 4: 0.0050
+File 5: 0.0030
+File 6: 0.0040
+File 7: 0.0050
+File 8: 0.0040
+File 9: 0.0030
+File 10: 0.0030
+File 11: 0.0050
+File 12: 0.0050
+File 13: 0.0050
+File 14: 0.0040
+File 15: 0.0070
+File 16: 0.0040
+File 17: 0.0050
+File 18: 0.0040
+File 19: 0.0050
+File 20: 0.0030
+File 21: 0.0040
+File 22: 0.0050
+File 23: 0.0050
 File 24: 0.0030
-File 25: 0.0030
+File 25: 0.0060
 File 26: 0.0040
 File 27: 0.0030
-File 28: 0.0050
+File 28: 0.0040
+File 29: 0.0040
+File 30: 0.0040
+--------STATS--------
+Total time: 0.1390
+Average: 0.0046
+Standard Deviation: 0.0020
+
+
+=====================
+Unsorted Small Files
+=====================
+Merge Sort
+=====================
+File 1: 0.0130
+File 2: 0.0120
+File 3: 0.0070
+File 4: 0.0050
+File 5: 0.0090
+File 6: 0.0060
+File 7: 0.0060
+File 8: 0.0050
+File 9: 0.0060
+File 10: 0.0060
+File 11: 0.0060
+File 12: 0.0060
+File 13: 0.0060
+File 14: 0.0050
+File 15: 0.0050
+File 16: 0.0060
+File 17: 0.0050
+File 18: 0.0070
+File 19: 0.0060
+File 20: 0.0070
+File 21: 0.0060
+File 22: 0.0060
+File 23: 0.0050
+File 24: 0.0050
+File 25: 0.0060
+File 26: 0.0070
+File 27: 0.0060
+File 28: 0.0070
+File 29: 0.0060
+File 30: 0.0040
+--------STATS--------
+Total time: 0.1920
+Average: 0.0064
+Standard Deviation: 0.0019
+
+
+=====================
+Unsorted Medium Files
+=====================
+Quick Sort
+=====================
+File 1: 0.0260
+File 2: 0.0250
+File 3: 0.0280
+File 4: 0.0300
+File 5: 0.0240
+File 6: 0.0240
+File 7: 0.0280
+File 8: 0.0250
+File 9: 0.0240
+File 10: 0.0240
+File 11: 0.0360
+File 12: 0.0440
+File 13: 0.0310
+File 14: 0.0320
+File 15: 0.0420
+File 16: 0.0350
+File 17: 0.0390
+File 18: 0.0410
+File 19: 0.0340
+File 20: 0.0320
+File 21: 0.0270
+File 22: 0.0290
+File 23: 0.0300
+File 24: 0.0250
+File 25: 0.0270
+File 26: 0.0290
+File 27: 0.0330
+File 28: 0.0320
+File 29: 0.0270
+File 30: 0.0270
+--------STATS--------
+Total time: 0.9100
+Average: 0.0303
+Standard Deviation: 0.0055
+
+
+=====================
+Unsorted Medium Files
+=====================
+Heap Sort
+=====================
+File 1: 0.0510
+File 2: 0.0480
+File 3: 0.0530
+File 4: 0.0480
+File 5: 0.0510
+File 6: 0.0560
+File 7: 0.0560
+File 8: 0.0590
+File 9: 0.0600
+File 10: 0.0580
+File 11: 0.0680
+File 12: 0.0660
+File 13: 0.0510
+File 14: 0.0510
+File 15: 0.0600
+File 16: 0.0520
+File 17: 0.0520
+File 18: 0.0510
+File 19: 0.0480
+File 20: 0.0510
+File 21: 0.0480
+File 22: 0.0490
+File 23: 0.0510
+File 24: 0.0590
+File 25: 0.0520
+File 26: 0.0500
+File 27: 0.0540
+File 28: 0.0530
+File 29: 0.0500
+File 30: 0.0520
+--------STATS--------
+Total time: 1.6080
+Average: 0.0536
+Standard Deviation: 0.0050
+
+
+=====================
+Unsorted Medium Files
+=====================
+Merge Sort
+=====================
+File 1: 0.0300
+File 2: 0.0320
+File 3: 0.0330
+File 4: 0.0330
+File 5: 0.0320
+File 6: 0.0310
+File 7: 0.0310
+File 8: 0.0360
+File 9: 0.0340
+File 10: 0.0310
+File 11: 0.0310
+File 12: 0.0340
+File 13: 0.0350
+File 14: 0.0340
+File 15: 0.0320
+File 16: 0.0320
+File 17: 0.0370
+File 18: 0.0350
+File 19: 0.0310
+File 20: 0.0310
+File 21: 0.0310
+File 22: 0.0310
+File 23: 0.0360
+File 24: 0.0310
+File 25: 0.0290
+File 26: 0.0310
+File 27: 0.0400
+File 28: 0.0310
+File 29: 0.0460
+File 30: 0.0440
+--------STATS--------
+Total time: 1.0050
+Average: 0.0335
+Standard Deviation: 0.0039
+
+
+=====================
+Unsorted Large Files
+=====================
+Quick Sort
+=====================
+File 1: 0.5680
+File 2: 0.6090
+File 3: 0.5700
+File 4: 0.5710
+File 5: 0.6210
+File 6: 0.5760
+File 7: 0.5490
+File 8: 0.5960
+File 9: 0.5960
+File 10: 0.5970
+File 11: 0.5450
+File 12: 0.5410
+File 13: 0.5300
+File 14: 0.5330
+File 15: 0.5500
+File 16: 0.5810
+File 17: 0.5710
+File 18: 0.5460
+File 19: 0.5340
+File 20: 0.5880
+File 21: 0.6120
+File 22: 0.5920
+File 23: 0.4680
+File 24: 0.6230
+File 25: 0.5940
+File 26: 0.4720
+File 27: 0.4880
+File 28: 0.5380
+File 29: 0.5070
+File 30: 0.5470
+--------STATS--------
+Total time: 16.8130
+Average: 0.5604
+Standard Deviation: 0.0404
+
+
+=====================
+Unsorted Large Files
+=====================
+Heap Sort
+=====================
+File 1: 1.0010
+File 2: 0.9790
+File 3: 1.0090
+File 4: 1.0370
+File 5: 1.0170
+File 6: 1.0070
+File 7: 0.9230
+File 8: 1.0600
+File 9: 1.0320
+File 10: 1.0350
+File 11: 0.9310
+File 12: 1.1080
+File 13: 0.9790
+File 14: 1.0560
+File 15: 1.3590
+File 16: 1.0100
+File 17: 0.9580
+File 18: 0.9330
+File 19: 0.8520
+File 20: 0.8960
+File 21: 0.9890
+File 22: 0.9780
+File 23: 1.0390
+File 24: 0.9890
+File 25: 0.9320
+File 26: 1.0820
+File 27: 0.9960
+File 28: 0.9040
+File 29: 1.0600
+File 30: 0.9200
+--------STATS--------
+Total time: 30.0710
+Average: 1.0024
+Standard Deviation: 0.0884
+
+
+=====================
+Unsorted Large Files
+=====================
+Merge Sort
+=====================
+File 1: 0.5650
+File 2: 0.5060
+File 3: 0.5340
+File 4: 0.5110
+File 5: 0.5300
+File 6: 0.5280
+File 7: 0.4980
+File 8: 0.5270
+File 9: 0.5180
+File 10: 0.5350
+File 11: 0.4660
+File 12: 0.5130
+File 13: 0.5480
+File 14: 0.4900
+File 15: 0.5100
+File 16: 0.4470
+File 17: 0.4320
+File 18: 0.5510
+File 19: 0.5230
+File 20: 0.4980
+File 21: 0.5000
+File 22: 0.5110
+File 23: 0.5990
+File 24: 0.5430
+File 25: 0.5120
+File 26: 0.3830
+File 27: 0.6640
+File 28: 0.5480
+File 29: 0.4970
+File 30: 0.3820
+--------STATS--------
+Total time: 15.3690
+Average: 0.5123
+Standard Deviation: 0.0542
+
+
+=====================
+Sorted Small Files
+=====================
+Quick Sort
+=====================
+File 1: 0.0140
+File 2: 0.0140
+File 3: 0.0150
+File 4: 0.0200
+File 5: 0.1450
+File 6: 0.0160
+File 7: 0.0150
+File 8: 0.0150
+File 9: 0.0140
+File 10: 0.0140
+File 11: 0.0140
+File 12: 0.0140
+File 13: 0.0130
+File 14: 0.0130
+File 15: 0.0140
+File 16: 0.0140
+File 17: 0.0140
+File 18: 0.0140
+File 19: 0.0130
+File 20: 0.0140
+File 21: 0.0140
+File 22: 0.0140
+File 23: 0.0730
+File 24: 0.0140
+File 25: 0.0150
+File 26: 0.0140
+File 27: 0.0230
+File 28: 0.0240
+File 29: 0.0240
+File 30: 0.0230
+--------STATS--------
+Total time: 0.6570
+Average: 0.0219
+Standard Deviation: 0.0253
+
+
+=====================
+Sorted Small Files
+=====================
+Heap Sort
+=====================
+File 1: 0.0020
+File 2: 0.0020
+File 3: 0.0030
+File 4: 0.0020
+File 5: 0.0020
+File 6: 0.0020
+File 7: 0.0030
+File 8: 0.0030
+File 9: 0.0020
+File 10: 0.0030
+File 11: 0.0020
+File 12: 0.0020
+File 13: 0.0020
+File 14: 0.0020
+File 15: 0.0030
+File 16: 0.0020
+File 17: 0.0020
+File 18: 0.0020
+File 19: 0.0020
+File 20: 0.0020
+File 21: 0.0020
+File 22: 0.0020
+File 23: 0.0030
+File 24: 0.0020
+File 25: 0.0030
+File 26: 0.0030
+File 27: 0.0020
+File 28: 0.0020
 File 29: 0.0030
 File 30: 0.0030
 --------STATS--------
-Total time: 0.2040
-Average: 0.0068
-Standard Deviation: 0.0032
+Total time: 0.0700
+Average: 0.0023
+Standard Deviation: 0.0005
 
+
+=====================
+Sorted Small Files
+=====================
+Merge Sort
+=====================
+File 1: 0.0030
+File 2: 0.0040
+File 3: 0.0030
+File 4: 0.0030
+File 5: 0.0030
+File 6: 0.0020
+File 7: 0.0030
+File 8: 0.0030
+File 9: 0.0030
+File 10: 0.0030
+File 11: 0.0030
+File 12: 0.0040
+File 13: 0.0030
+File 14: 0.0020
+File 15: 0.0030
+File 16: 0.0030
+File 17: 0.0020
+File 18: 0.0020
+File 19: 0.0030
+File 20: 0.0030
+File 21: 0.0020
+File 22: 0.0020
+File 23: 0.0020
+File 24: 0.0020
+File 25: 0.0020
+File 26: 0.0010
+File 27: 0.0020
+File 28: 0.0020
+File 29: 0.0020
+File 30: 0.0020
+--------STATS--------
+Total time: 0.0770
+Average: 0.0026
+Standard Deviation: 0.0007
+
+
+=====================
+Sorted Medium Files
+=====================
+Quick Sort
+=====================
+File 1: 0.3640
+File 2: 0.3580
+File 3: 0.3670
+File 4: 0.3730
+File 5: 0.3630
+File 6: 0.3980
+File 7: 0.3590
+File 8: 0.3610
+File 9: 0.3630
+File 10: 0.3560
+File 11: 0.3620
+File 12: 0.3590
+File 13: 0.3590
+File 14: 0.3590
+File 15: 0.3590
+File 16: 0.3720
+File 17: 0.3580
+File 18: 0.3640
+File 19: 0.3920
+File 20: 0.3680
+File 21: 0.3580
+File 22: 0.3580
+File 23: 0.3600
+File 24: 0.3560
+File 25: 0.3590
+File 26: 0.3610
+File 27: 0.3590
+File 28: 0.3590
+File 29: 0.3570
+File 30: 0.3590
+--------STATS--------
+Total time: 10.9000
+Average: 0.3633
+Standard Deviation: 0.0095
+
+
+=====================
+Sorted Medium Files
+=====================
+Heap Sort
+=====================
+File 1: 0.0240
+File 2: 0.0240
+File 3: 0.0240
+File 4: 0.0250
+File 5: 0.0240
+File 6: 0.0240
+File 7: 0.0250
+File 8: 0.0240
+File 9: 0.0250
+File 10: 0.0240
+File 11: 0.0230
+File 12: 0.0250
+File 13: 0.0240
+File 14: 0.0240
+File 15: 0.0280
+File 16: 0.0260
+File 17: 0.0240
+File 18: 0.0240
+File 19: 0.0240
+File 20: 0.0250
+File 21: 0.0240
+File 22: 0.0240
+File 23: 0.0230
+File 24: 0.0240
+File 25: 0.0290
+File 26: 0.0320
+File 27: 0.0330
+File 28: 0.0300
+File 29: 0.0300
+File 30: 0.0270
+--------STATS--------
+Total time: 0.7660
+Average: 0.0255
+Standard Deviation: 0.0026
+
+
+=====================
+Sorted Medium Files
+=====================
+Merge Sort
+=====================
+File 1: 0.0220
+File 2: 0.0210
+File 3: 0.0230
+File 4: 0.0200
+File 5: 0.0210
+File 6: 0.0240
+File 7: 0.0210
+File 8: 0.0200
+File 9: 0.0210
+File 10: 0.0200
+File 11: 0.0210
+File 12: 0.0200
+File 13: 0.0200
+File 14: 0.0210
+File 15: 0.0200
+File 16: 0.0210
+File 17: 0.0200
+File 18: 0.0200
+File 19: 0.0200
+File 20: 0.0210
+File 21: 0.0200
+File 22: 0.0200
+File 23: 0.0200
+File 24: 0.0200
+File 25: 0.0200
+File 26: 0.0200
+File 27: 0.0210
+File 28: 0.0200
+File 29: 0.0200
+File 30: 0.0200
+--------STATS--------
+Total time: 0.6180
+Average: 0.0206
+Standard Deviation: 0.0010
+
+
+=====================
+Sorted Large Files
+=====================
+Quick Sort
+=====================
+File 1: 24.4410
+File 2: 24.4900
+File 3: 24.5170
+File 4: 24.6090
+File 5: 24.7500
+File 6: 25.0560
+File 7: 25.4550
+File 8: 24.6790
+File 9: 24.6110
+File 10: 24.6440
+File 11: 26.1580
+File 12: 25.1070
+File 13: 25.0090
+File 14: 24.9860
+File 15: 24.8570
+File 16: 24.8600
+File 17: 24.9770
+File 18: 24.7280
+File 19: 25.0800
+File 20: 24.8800
+File 21: 24.7930
+File 22: 25.0380
+File 23: 25.3280
+File 24: 25.8200
+File 25: 24.5620
+File 26: 24.5060
+File 27: 24.4860
+File 28: 24.4750
+File 29: 24.5960
+File 30: 24.8270
+--------STATS--------
+Total time: 746.3250
+Average: 24.8775
+Standard Deviation: 0.3934
+
+
+=====================
+Sorted Large Files
+=====================
+Heap Sort
+=====================
+File 1: 0.4700
+File 2: 0.5330
+File 3: 0.4480
+File 4: 0.5440
+File 5: 0.5020
+File 6: 0.4620
+File 7: 0.5210
+File 8: 0.5250
+File 9: 0.4630
+File 10: 0.5220
+File 11: 0.5200
+File 12: 0.5020
+File 13: 0.5220
+File 14: 0.4830
+File 15: 0.5150
+File 16: 0.4840
+File 17: 0.4980
+File 18: 0.4840
+File 19: 0.4870
+File 20: 0.5060
+File 21: 0.4900
+File 22: 0.5280
+File 23: 0.4940
+File 24: 0.4890
+File 25: 0.4970
+File 26: 0.4330
+File 27: 0.5760
+File 28: 0.5330
+File 29: 0.4210
+File 30: 0.5550
+--------STATS--------
+Total time: 15.0070
+Average: 0.5002
+Standard Deviation: 0.0341
+
+
+=====================
+Sorted Large Files
+=====================
+Merge Sort
+=====================
+File 1: 0.4200
+File 2: 0.3760
+File 3: 0.3940
+File 4: 0.3460
+File 5: 0.4230
+File 6: 0.3490
+File 7: 0.4100
+File 8: 0.3930
+File 9: 0.3540
+File 10: 0.3870
+File 11: 0.3860
+File 12: 0.4190
+File 13: 0.3550
+File 14: 0.3560
+File 15: 0.3510
+File 16: 0.3710
+File 17: 0.3350
+File 18: 0.2600
+File 19: 0.2540
+File 20: 0.4000
+File 21: 0.3980
+File 22: 0.5230
+File 23: 0.2570
+File 24: 0.4050
+File 25: 0.3840
+File 26: 0.2530
+File 27: 0.4600
+File 28: 0.3980
+File 29: 0.2580
+File 30: 0.3940
+--------STATS--------
+Total time: 11.0690
+Average: 0.3690
+Standard Deviation: 0.0619
+
+
+=====================
+ReverseSorted Small Files
+=====================
+Quick Sort
+=====================
+File 1: 0.3590
+File 2: 0.2810
+File 3: 0.3460
+File 4: 0.3020
+File 5: 0.2910
+File 6: 0.2800
+File 7: 0.2750
+File 8: 0.2790
+File 9: 0.2760
+File 10: 0.2780
+File 11: 0.2800
+File 12: 0.2770
+File 13: 0.2790
+File 14: 0.2780
+File 15: 0.2770
+File 16: 0.2770
+File 17: 0.2810
+File 18: 0.2830
+File 19: 0.2780
+File 20: 0.2800
+File 21: 0.2820
+File 22: 0.3020
+File 23: 0.2760
+File 24: 0.2760
+File 25: 0.2780
+File 26: 0.2770
+File 27: 0.2730
+File 28: 0.2800
+File 29: 0.2840
+File 30: 0.3010
+--------STATS--------
+Total time: 8.5860
+Average: 0.2862
+Standard Deviation: 0.0193
+
+
+=====================
+ReverseSorted Small Files
+=====================
+Heap Sort
+=====================
+File 1: 0.0020
+File 2: 0.0020
+File 3: 0.0020
+File 4: 0.0010
+File 5: 0.0010
+File 6: 0.0020
+File 7: 0.0020
+File 8: 0.0020
+File 9: 0.0020
+File 10: 0.0020
+File 11: 0.0020
+File 12: 0.0010
+File 13: 0.0020
+File 14: 0.0020
+File 15: 0.0020
+File 16: 0.0020
+File 17: 0.0020
+File 18: 0.0020
+File 19: 0.0020
+File 20: 0.0020
+File 21: 0.0030
+File 22: 0.0020
+File 23: 0.0020
+File 24: 0.0020
+File 25: 0.0020
+File 26: 0.0020
+File 27: 0.0020
+File 28: 0.0020
+File 29: 0.0010
+File 30: 0.0020
+--------STATS--------
+Total time: 0.0570
+Average: 0.0019
+Standard Deviation: 0.0004
+
+
+=====================
+ReverseSorted Small Files
+=====================
+Merge Sort
+=====================
+File 1: 0.0020
+File 2: 0.0030
+File 3: 0.0010
+File 4: 0.0010
+File 5: 0.0010
+File 6: 0.0020
+File 7: 0.0010
+File 8: 0.0010
+File 9: 0.0020
+File 10: 0.0020
+File 11: 0.0020
+File 12: 0.0020
+File 13: 0.0030
+File 14: 0.0020
+File 15: 0.0020
+File 16: 0.0010
+File 17: 0.0010
+File 18: 0.0010
+File 19: 0.0010
+File 20: 0.0020
+File 21: 0.0030
+File 22: 0.0010
+File 23: 0.0010
+File 24: 0.0010
+File 25: 0.0010
+File 26: 0.0010
+File 27: 0.0020
+File 28: 0.0020
+File 29: 0.0020
+File 30: 0.0020
+--------STATS--------
+Total time: 0.0490
+Average: 0.0016
+Standard Deviation: 0.0007
+
+
+=====================
+ReverseSorted Medium Files
+=====================
+Quick Sort
+=====================
+File 1: 4.5000
+File 2: 4.4650
+File 3: 4.4500
+File 4: 4.4300
+File 5: 4.3940
+File 6: 4.4240
+File 7: 4.4650
+File 8: 4.4590
+File 9: 4.4360
+File 10: 4.4300
+File 11: 4.4480
+File 12: 4.4250
+File 13: 4.4090
+File 14: 4.4120
+File 15: 4.4640
+File 16: 4.4610
+File 17: 4.4560
+File 18: 4.4520
+File 19: 4.4440
+File 20: 4.4370
+File 21: 4.4410
+File 22: 4.4480
+File 23: 4.4100
+File 24: 4.4470
+File 25: 4.4600
+File 26: 4.4180
+File 27: 4.4480
+File 28: 4.4380
+File 29: 4.4410
+File 30: 4.4470
+--------STATS--------
+Total time: 133.2590
+Average: 4.4420
+Standard Deviation: 0.0210
+
+
+=====================
+ReverseSorted Medium Files
+=====================
+Heap Sort
+=====================
+File 1: 0.0260
+File 2: 0.0260
+File 3: 0.0240
+File 4: 0.0250
+File 5: 0.0260
+File 6: 0.0260
+File 7: 0.0260
+File 8: 0.0250
+File 9: 0.0240
+File 10: 0.0240
+File 11: 0.0260
+File 12: 0.0280
+File 13: 0.0250
+File 14: 0.0260
+File 15: 0.0260
+File 16: 0.0280
+File 17: 0.0260
+File 18: 0.0240
+File 19: 0.0240
+File 20: 0.0260
+File 21: 0.0250
+File 22: 0.0260
+File 23: 0.0250
+File 24: 0.0250
+File 25: 0.0290
+File 26: 0.0250
+File 27: 0.0240
+File 28: 0.0250
+File 29: 0.0250
+File 30: 0.0250
+--------STATS--------
+Total time: 0.7650
+Average: 0.0255
+Standard Deviation: 0.0012
+
+
+=====================
+ReverseSorted Medium Files
+=====================
+Merge Sort
+=====================
+File 1: 0.0210
+File 2: 0.0210
+File 3: 0.0210
+File 4: 0.0200
+File 5: 0.0210
+File 6: 0.0230
+File 7: 0.0210
+File 8: 0.0210
+File 9: 0.0210
+File 10: 0.0210
+File 11: 0.0210
+File 12: 0.0210
+File 13: 0.0210
+File 14: 0.0210
+File 15: 0.0220
+File 16: 0.0260
+File 17: 0.0210
+File 18: 0.0210
+File 19: 0.0230
+File 20: 0.0200
+File 21: 0.0210
+File 22: 0.0210
+File 23: 0.0210
+File 24: 0.0210
+File 25: 0.0210
+File 26: 0.0210
+File 27: 0.0210
+File 28: 0.0210
+File 29: 0.0210
+File 30: 0.0210
+--------STATS--------
+Total time: 0.6380
+Average: 0.0213
+Standard Deviation: 0.0011
+
+
+=====================
+ReverseSorted Large Files
+=====================
+Quick Sort
+=====================
+File 1: 110.8890
+File 2: 108.0920
+File 3: 108.1120
+File 4: 108.1650
+File 5: 108.5750
+File 6: 107.4600
+File 7: 107.1990
+File 8: 108.7860
+File 9: 111.3880
+File 10: 109.8490
+File 11: 107.4570
+File 12: 108.1030
+File 13: 107.1770
+File 14: 107.1710
+File 15: 107.1110
+File 16: 108.2260
+File 17: 108.5630
+File 18: 109.3970
+File 19: 107.9970
+File 20: 108.0460
+File 21: 107.1930
+File 22: 107.3020
+File 23: 107.0340
+File 24: 108.7720
+File 25: 108.3210
+File 26: 108.0370
+File 27: 107.2950
+File 28: 107.6700
+File 29: 109.6720
+File 30: 108.6040
+--------STATS--------
+Total time: 3247.6630
+Average: 108.2554
+Standard Deviation: 1.0729
+
+
+=====================
+ReverseSorted Large Files
+=====================
+Heap Sort
+=====================
+File 1: 0.5350
+File 2: 0.5870
+File 3: 0.5400
+File 4: 0.5500
+File 5: 0.5940
+File 6: 0.5510
+File 7: 0.6060
+File 8: 0.5570
+File 9: 0.5520
+File 10: 0.5780
+File 11: 0.5390
+File 12: 0.4940
+File 13: 0.5300
+File 14: 0.5640
+File 15: 0.5680
+File 16: 0.5680
+File 17: 0.6070
+File 18: 0.5210
+File 19: 0.5410
+File 20: 0.5870
+File 21: 0.5420
+File 22: 0.5790
+File 23: 0.4950
+File 24: 0.5600
+File 25: 0.5450
+File 26: 0.5340
+File 27: 0.5390
+File 28: 0.5750
+File 29: 0.5420
+File 30: 0.5650
+--------STATS--------
+Total time: 16.6450
+Average: 0.5548
+Standard Deviation: 0.0273
+
+
+=====================
+ReverseSorted Large Files
+=====================
+Merge Sort
+=====================
+File 1: 0.4300
+File 2: 0.2640
+File 3: 0.2590
+File 4: 0.4230
+File 5: 0.4460
+File 6: 0.4140
+File 7: 0.3570
+File 8: 0.3840
+File 9: 0.3750
+File 10: 0.3750
+File 11: 0.3480
+File 12: 0.3480
+File 13: 0.3940
+File 14: 0.3870
+File 15: 0.3020
+File 16: 0.4110
+File 17: 0.3830
+File 18: 0.3970
+File 19: 0.3520
+File 20: 0.3730
+File 21: 0.3710
+File 22: 0.3190
+File 23: 0.2620
+File 24: 0.2570
+File 25: 0.4850
+File 26: 0.4160
+File 27: 0.3760
+File 28: 0.3600
+File 29: 0.2570
+File 30: 0.4020
+--------STATS--------
+Total time: 10.9270
+Average: 0.3642
+Standard Deviation: 0.0585
