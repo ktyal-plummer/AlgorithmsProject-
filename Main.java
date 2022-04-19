@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.io.PrintWriter;
 
@@ -7,61 +6,61 @@ import SortingAlgorithms.*;
 public class Main {
     public static void main(String[] args) {
         // Write data from all the sorts to a results file
-        try {
-            PrintWriter writer = new PrintWriter("./results.txt", "UTF-8");
-            QuickSort qSort = new QuickSort();
-            HeapSort hSort = new HeapSort();
-            MergeSort mSort = new MergeSort();
+        // try {
+        //     PrintWriter writer = new PrintWriter("./results.txt", "UTF-8");
+        //     QuickSort qSort = new QuickSort();
+        //     HeapSort hSort = new HeapSort();
+        //     MergeSort mSort = new MergeSort();
 
-            //Unsorted small
-            printStatsToFile(writer, "Unsorted", "Small", qSort);
-            printStatsToFile(writer, "Unsorted", "Small", hSort);
-            printStatsToFile(writer, "Unsorted", "Small", mSort);
+        //     //Unsorted small
+        //     printStatsToFile(writer, "Unsorted", "Small", qSort);
+        //     printStatsToFile(writer, "Unsorted", "Small", hSort);
+        //     printStatsToFile(writer, "Unsorted", "Small", mSort);
 
-            // Unsorted Medium
-            printStatsToFile(writer, "Unsorted", "Medium", qSort);
-            printStatsToFile(writer, "Unsorted", "Medium", hSort);
-            printStatsToFile(writer, "Unsorted", "Medium", mSort);
+        //     // Unsorted Medium
+        //     printStatsToFile(writer, "Unsorted", "Medium", qSort);
+        //     printStatsToFile(writer, "Unsorted", "Medium", hSort);
+        //     printStatsToFile(writer, "Unsorted", "Medium", mSort);
 
-            // Unsorted Large
-            printStatsToFile(writer, "Unsorted", "Large", qSort);
-            printStatsToFile(writer, "Unsorted", "Large", hSort);
-            printStatsToFile(writer, "Unsorted", "Large", mSort);
+        //     // Unsorted Large
+        //     printStatsToFile(writer, "Unsorted", "Large", qSort);
+        //     printStatsToFile(writer, "Unsorted", "Large", hSort);
+        //     printStatsToFile(writer, "Unsorted", "Large", mSort);
 
-            // Sorted Small
-            printStatsToFile(writer, "Sorted", "Small", qSort);
-            printStatsToFile(writer, "Sorted", "Small", hSort);
-            printStatsToFile(writer, "Sorted", "Small", mSort);
+        //     // Sorted Small
+        //     printStatsToFile(writer, "Sorted", "Small", qSort);
+        //     printStatsToFile(writer, "Sorted", "Small", hSort);
+        //     printStatsToFile(writer, "Sorted", "Small", mSort);
 
-            // Sorted Medium
-            printStatsToFile(writer, "Sorted", "Medium", qSort);
-            printStatsToFile(writer, "Sorted", "Medium", hSort);
-            printStatsToFile(writer, "Sorted", "Medium", mSort);
+        //     // Sorted Medium
+        //     printStatsToFile(writer, "Sorted", "Medium", qSort);
+        //     printStatsToFile(writer, "Sorted", "Medium", hSort);
+        //     printStatsToFile(writer, "Sorted", "Medium", mSort);
 
-            // Sorted Large
-            printStatsToFile(writer, "Sorted", "Large", qSort);
-            printStatsToFile(writer, "Sorted", "Large", hSort);
-            printStatsToFile(writer, "Sorted", "Large", mSort);
+        //     // Sorted Large
+        //     printStatsToFile(writer, "Sorted", "Large", qSort);
+        //     printStatsToFile(writer, "Sorted", "Large", hSort);
+        //     printStatsToFile(writer, "Sorted", "Large", mSort);
 
-            // Reverse Sorted Small
-            printStatsToFile(writer, "ReverseSorted", "Small", qSort);
-            printStatsToFile(writer, "ReverseSorted", "Small", hSort);
-            printStatsToFile(writer, "ReverseSorted", "Small", mSort);
+        //     // Reverse Sorted Small
+        //     printStatsToFile(writer, "ReverseSorted", "Small", qSort);
+        //     printStatsToFile(writer, "ReverseSorted", "Small", hSort);
+        //     printStatsToFile(writer, "ReverseSorted", "Small", mSort);
 
-            // Reverse Sorted Medium
-            printStatsToFile(writer, "ReverseSorted", "Medium", qSort);
-            printStatsToFile(writer, "ReverseSorted", "Medium", hSort);
-            printStatsToFile(writer, "ReverseSorted", "Medium", mSort);
+        //     // Reverse Sorted Medium
+        //     printStatsToFile(writer, "ReverseSorted", "Medium", qSort);
+        //     printStatsToFile(writer, "ReverseSorted", "Medium", hSort);
+        //     printStatsToFile(writer, "ReverseSorted", "Medium", mSort);
 
-            // Reverse Sorted Large
-            printStatsToFile(writer, "ReverseSorted", "Large", qSort);
-            printStatsToFile(writer, "ReverseSorted", "Large", hSort);
-            printStatsToFile(writer, "ReverseSorted", "Large", mSort);
+        //     // Reverse Sorted Large
+        //     printStatsToFile(writer, "ReverseSorted", "Large", qSort);
+        //     printStatsToFile(writer, "ReverseSorted", "Large", hSort);
+        //     printStatsToFile(writer, "ReverseSorted", "Large", mSort);
 
-            writer.close();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        //     writer.close();
+        // } catch (Exception e) {
+        //     System.out.println(e);
+        // }
 
         // Unsorted File generation
         // GenerateFiles gf = new GenerateFiles(30, 1000000,
